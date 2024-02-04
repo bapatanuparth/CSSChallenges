@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+  height: 100%;
+  background: #090a0e;
+  color: white;
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.leftWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.signIn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  margin-left: 12px;
+}
+
+.logoImg {
+  width: 50px;
+  height: 50px;
+}
+
+.text-input {
+  height: 35px;
+
+  background: #3f3f3f;
+  border-radius: 10px;
+}
+
+form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.primary-btn {
+  height: 40px;
+  width: 100%;
+  background: rgb(231, 0, 0);
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+.primary-btn:hover {
+  background: rgb(255, 214, 214);
+  cursor: pointer;
+}
+
+.leftLower {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.or {
+  display: flex;
+  width: 60%;
+}
+
+.bar {
+  flex: auto;
+  border: none;
+  height: 1px;
+  background: #aaa;
+}
+
+.or span {
+  padding: 0 1.2rem;
+}
+.rightWrapper {
+  flex: 1;
+}
+
+.rightWrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/Login_page_clone/img/back.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.back-img {
+  object-fit: cover;
+}
+
+.secondary-btn {
+  border: solid rgb(231, 0, 0) 1px;
+  padding: 1rem 3rem;
+}
+
+.secondary-btn:hover {
+  background-color: rgb(255, 178, 150);
+  color: #181818;
+  transition: 0.3s;
+  border: black;
+}
+
+.showcase {
+  height: 100%;
+  flex: 1;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.showcaseText {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.showcaseButton {
+  width: 35%;
+  padding: 0.5rem;
+  background: transparent;
+  color: white;
+  border: 1px solid whitesmoke;
+}
+
+.showcaseButton:hover {
+  background-color: #181818;
+  cursor: pointer;
+}
+
+/* Media queries */
+
+@media (min-width: 1200px) {
+  .leftWrapper {
+    flex: 2;
+  }
+  .rightWrapper {
+    flex: 3;
+  }
+}
